@@ -19,22 +19,22 @@
   <meta name="author" content="0mg">
   <meta name="keywords" content="">
   
-    <meta name="description" content="逗号间隔输入输入格式 11,2,34,567 或 11, 2, 34, 567 使用 cin 根据数据的类型以及分隔符自动对数据进行输入。使用 cin.get() 读取分隔符并舍弃 1234567891011121314151617181920#include &lt;iostream&gt;#include &lt;vector&gt;using namespace std;int main()">
+    <meta name="description" content="Manifest.json12345678910111213141516171819&#123;    &quot;name&quot;: &quot;Extension test&quot;,    &quot;description&quot;: &quot;This is a test&quot;,    &quot;version&quot;: &quot;1.0&quot;,    &amp;q">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C++ I&#x2F;O流输入数字以逗号间隔&#x2F;常规输入">
-<meta property="og:url" content="https://pony65536.github.io/2024/10/16/C-I-O%E6%B5%81%E8%BE%93%E5%85%A5%E6%95%B0%E5%AD%97%E4%BB%A5%E9%80%97%E5%8F%B7%E9%97%B4%E9%9A%94-%E5%B8%B8%E8%A7%84%E8%BE%93%E5%85%A5/index.html">
+<meta property="og:title" content="Chrome插件开关">
+<meta property="og:url" content="https://pony65536.github.io/2025/03/03/chrome-extension-startup/index.html">
 <meta property="og:site_name" content="荒野">
-<meta property="og:description" content="逗号间隔输入输入格式 11,2,34,567 或 11, 2, 34, 567 使用 cin 根据数据的类型以及分隔符自动对数据进行输入。使用 cin.get() 读取分隔符并舍弃 1234567891011121314151617181920#include &lt;iostream&gt;#include &lt;vector&gt;using namespace std;int main()">
+<meta property="og:description" content="Manifest.json12345678910111213141516171819&#123;    &quot;name&quot;: &quot;Extension test&quot;,    &quot;description&quot;: &quot;This is a test&quot;,    &quot;version&quot;: &quot;1.0&quot;,    &amp;q">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-10-16T06:01:39.000Z">
-<meta property="article:modified_time" content="2024-11-20T08:23:20.974Z">
+<meta property="article:published_time" content="2025-03-03T02:23:39.000Z">
+<meta property="article:modified_time" content="2025-03-03T02:29:22.130Z">
 <meta property="article:author" content="0mg">
-<meta property="article:tag" content="tricks">
+<meta property="article:tag" content="Chrome Extension">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>C++ I/O流输入数字以逗号间隔/常规输入 - 荒野</title>
+  <title>Chrome插件开关 - 荒野</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -194,13 +194,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('https://pic.0mg.club/47402905_p0.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="C++ I/O流输入数字以逗号间隔/常规输入"></span>
+            <span id="subtitle" data-typed-text="Chrome插件开关"></span>
           
         </div>
 
@@ -211,8 +211,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-10-16 14:01" pubdate>
-          2024年10月16日 下午
+        <time datetime="2025-03-03 10:23" pubdate>
+          2025年3月3日 上午
         </time>
       </span>
     
@@ -223,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          213 字
+          72 字
         
       </span>
     
@@ -234,7 +234,7 @@
         
         
         
-          2 分钟
+          1 分钟
         
       </span>
     
@@ -271,22 +271,13 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">C++ I/O流输入数字以逗号间隔/常规输入</h1>
+            <h1 id="seo-header">Chrome插件开关</h1>
             
             
               <div class="markdown-body">
                 
-                <h3 id="逗号间隔输入"><a href="#逗号间隔输入" class="headerlink" title="逗号间隔输入"></a>逗号间隔输入</h3><p>输入格式</p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs text">1,2,34,567<br></code></pre></td></tr></table></figure>
-<p>或</p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs text">1, 2, 34, 567<br></code></pre></td></tr></table></figure>
-<p>使用 <code>cin</code> 根据数据的类型以及分隔符自动对数据进行输入。使用 <code>cin.get()</code> 读取分隔符并舍弃</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;vector&gt;</span></span><br><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>    <span class="hljs-type">int</span> temp;<br>    vector&lt;<span class="hljs-type">int</span>&gt; res;<br>    <span class="hljs-keyword">while</span> (<span class="hljs-number">1</span>)<br>    &#123;<br>        cin &gt;&gt; temp;<br>        res.<span class="hljs-built_in">push_back</span>(temp);<br>        <span class="hljs-keyword">if</span> (cin.<span class="hljs-built_in">get</span>() == <span class="hljs-string">&#x27;\n&#x27;</span>)<br>            <span class="hljs-keyword">break</span>;<br>    &#125;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">auto</span> p : res)<br>        cout &lt;&lt; p &lt;&lt; <span class="hljs-string">&quot;   &quot;</span>;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+                <h3 id="Manifest-json"><a href="#Manifest-json" class="headerlink" title="Manifest.json"></a>Manifest.json</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Extension test&quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;description&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;This is a test&quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;version&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;1.0&quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;manifest_version&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">3</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;content_scripts&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>        <span class="hljs-punctuation">&#123;</span><br>            <span class="hljs-attr">&quot;js&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;scripts/content.js&quot;</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">&quot;matches&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>                <span class="hljs-string">&quot;http://www.example.com/*&quot;</span><br>            <span class="hljs-punctuation">]</span><br>        <span class="hljs-punctuation">&#125;</span><br>    <span class="hljs-punctuation">]</span><br>    <span class="hljs-attr">&quot;permissions&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;activeTab&quot;</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;action&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;background&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>        <span class="hljs-attr">&quot;service_worker&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;background.js&quot;</span><br>    <span class="hljs-punctuation">&#125;</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure>
 
-<h3 id="常规输入"><a href="#常规输入" class="headerlink" title="常规输入"></a>常规输入</h3><p>输入格式</p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs text">2<br>2<br>1 2<br>3<br>0 2 3<br></code></pre></td></tr></table></figure>
-<p>第一行为数列行数，第二行为数列中元素的个数，第三行为各元素的值，依次类推</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;vector&gt;</span></span><br><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>    vector&lt;vector&lt;<span class="hljs-type">int</span>&gt;&gt; res;<br>    <span class="hljs-type">int</span> n;<br>    cin &gt;&gt; n;<br><br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++)<br>    &#123;<br>        <span class="hljs-type">int</span> length;<br>        cin &gt;&gt; length;<br>        vector&lt;<span class="hljs-type">int</span>&gt; line;<br>        <span class="hljs-type">int</span> temp;<br>        <span class="hljs-keyword">while</span> (<span class="hljs-number">1</span>)<br>        &#123;<br>            cin &gt;&gt; temp;<br>            line.<span class="hljs-built_in">push_back</span>(temp);<br>            <span class="hljs-keyword">if</span> (cin.<span class="hljs-built_in">get</span>() == <span class="hljs-string">&#x27;\n&#x27;</span>)<br>                <span class="hljs-keyword">break</span>;<br>        &#125;<br>        res.<span class="hljs-built_in">push_back</span>(line);<br>        line.<span class="hljs-built_in">clear</span>();<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
                 
               </div>
             
@@ -304,7 +295,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/C/" class="category-chain-item">C++</a>
+  <a href="/categories/javascript/" class="category-chain-item">javascript</a>
   
   
 
@@ -319,7 +310,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/tricks/" class="print-no-link">#tricks</a>
+        <a href="/tags/Chrome-Extension/" class="print-no-link">#Chrome Extension</a>
       
     </div>
   
@@ -333,18 +324,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/11/18/sqlite-%E5%AE%9E%E7%8E%B0%E5%88%86%E5%89%B2%E5%AD%97%E7%AC%A6%E4%B8%B2/" title="SQLite实现分割字符串">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">SQLite实现分割字符串</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/10/08/nginx%E9%85%8D%E7%BD%AEhttp-80-%E8%87%AA%E5%8A%A8%E8%B7%B3%E8%BD%AC%E5%88%B0https-443/" title="nginx配置http(80)自动跳转到https(443)">
-                        <span class="hidden-mobile">nginx配置http(80)自动跳转到https(443)</span>
+                      <a href="/2024/11/18/sql-split-string/" title="SQLite实现分割字符串">
+                        <span class="hidden-mobile">SQLite实现分割字符串</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
