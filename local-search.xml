@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>antd模拟输入</title>
+    <link href="/2025/04/25/antd-input-simulate/"/>
+    <url>/2025/04/25/antd-input-simulate/</url>
+    
+    <content type="html"><![CDATA[<p>在 antd 中，普通的 dispatch input 和 dispatch change 函数不能触发输入框输入，需要重新绑定_valueTracker</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// 获取 input 输入框的dom对象</span><br><span class="hljs-keyword">var</span> element_input = <span class="hljs-variable language_">window</span>.<span class="hljs-property">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&quot;input&quot;</span>);<br><br><span class="hljs-comment">// JavaScript 中的 `_valuetracker` 方法常常用于监听 HTML 表单元素（如 input，select，textarea 等）的值变化，并在每次值发生变化时执行回调函数。</span><br><span class="hljs-keyword">if</span> (element_input.<span class="hljs-property">_valueTracker</span>)<br>    <span class="hljs-keyword">var</span> _templMethod = element_input.<span class="hljs-property">_valueTracker</span>.<span class="hljs-property">getValue</span>;<br><span class="hljs-keyword">if</span> (element_input.<span class="hljs-property">getValue</span>) <span class="hljs-keyword">var</span> _templMethod = element_input.<span class="hljs-property">getValue</span>;<br><span class="hljs-keyword">if</span> (element_input.<span class="hljs-property">_valueTracker</span>)<br>    element_input.<span class="hljs-property">_valueTracker</span>.<span class="hljs-property">getValue</span> = <span class="hljs-function">() =&gt;</span> <span class="hljs-string">&quot;&quot;</span>;<br><br><span class="hljs-comment">// 修改input的值</span><br>element_input.<span class="hljs-property">value</span> = <span class="hljs-string">&quot;123&quot;</span>;<br><br><span class="hljs-comment">// 设置输入框的 input 事件</span><br><span class="hljs-keyword">var</span> event = <span class="hljs-keyword">new</span> <span class="hljs-title class_">InputEvent</span>(<span class="hljs-string">&quot;input&quot;</span>, &#123;<br>    <span class="hljs-attr">bubbles</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// 表示事件对象是否冒泡</span><br>    <span class="hljs-attr">cancelable</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// 表示事件是否可以被取消，即能否用Event.preventDefault()取消这个事件。</span><br>&#125;);<br><span class="hljs-comment">// 触发 dom 对象的 input 事件</span><br>element_input.<span class="hljs-title function_">dispatchEvent</span>(event);<br><br><span class="hljs-comment">// 将`_valuetracker`的值（方法）重新绑定</span><br><span class="hljs-keyword">if</span> (element_input.<span class="hljs-property">_valueTracker</span>)<br>    element_input.<span class="hljs-property">_valueTracker</span>.<span class="hljs-property">getValue</span> = _templMethod;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Chrome插件开关</title>
     <link href="/2025/03/03/chrome-extension-startup/"/>
     <url>/2025/03/03/chrome-extension-startup/</url>
