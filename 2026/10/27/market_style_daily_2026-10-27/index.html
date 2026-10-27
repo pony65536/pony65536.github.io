@@ -1,0 +1,865 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="https://pic.0mg.club/icon.png">
+  <link rel="icon" href="https://pic.0mg.club/icon.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="0mg">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="Alright, let&#39;s unpack this data like we&#39;re chatting after the market&#39;s closed. The Python output gives us the raw numbers: defense level, panic alerts, pool allocations, and changes from yesterday. W">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2026-10-27 每日轮动风格雷达">
+<meta property="og:url" content="https://pony65536.github.io/2026/10/27/market_style_daily_2026-10-27/index.html">
+<meta property="og:site_name" content="0mg">
+<meta property="og:description" content="Alright, let&#39;s unpack this data like we&#39;re chatting after the market&#39;s closed. The Python output gives us the raw numbers: defense level, panic alerts, pool allocations, and changes from yesterday. W">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-10-26T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-27T10:22:06.341Z">
+<meta property="article:author" content="0mg">
+<meta property="article:tag" content="rotate">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>2026-10-27 每日轮动风格雷达 - 0mg</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"pony65536.github.io","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>0mg</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content (desktop) -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-home-fill"></i>
+                  <span>首页</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/archives/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-archive-fill"></i>
+                  <span>归档</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-category-fill"></i>
+                  <span>分类</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/tags/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-tags-fill"></i>
+                  <span>标签</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>关于</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>搜索</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="开灯"
+               data-label-dark="关灯">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">关灯</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="2026-10-27 每日轮动风格雷达"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2026-10-27 00:00" pubdate>
+          2026年10月27日 凌晨
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          8.5k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          71 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">2026-10-27 每日轮动风格雷达</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <think>
+Alright, let's unpack this data like we're chatting after the market's closed. The Python output gives us the raw numbers: defense level, panic alerts, pool allocations, and changes from yesterday. We need to build a narrative out of these facts, something insightful, not just a data dump. My job is to translate these raw facts into something useful for understanding the day's events.
+
+
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs text">## 今日总纲<br>市场整体呈现震荡态势，部分板块有所分化。<br><br>## 今日风格地图<br><br>- 强势：银行保险<br>- 趋势：运营商电力<br>- 改善：消费电子端侧AI、汽车智能化、机器人智能制造、中药品牌、白酒、电网设备<br>- 破位：AI服务器、PCB链、半导体设备材料、芯片设计存储<br>- 中性：AI光模块CPO、AI应用软件、军工航空航天、低空经济、贵金属黄金、工业金属、煤炭油气、能源红利、传统券商、金融科技、创新药、CXO医疗服务、医疗器械、消费医疗医美、动力电池链、新能源车链、光伏主链、逆变器储能、食品饮料、地产链复苏<br><br>&gt; **说明**：风格地图描述板块中期状态；实际动作由市场宽度阀门、短线压力和池级预警覆盖，动作层优先于状态标签。<br>## 相比上一交易日的变化<br>整体市场情绪略有回落，个股表现差异加大。<br><br>## 强势<br>无明显强势板块。<br><br>## 趋势<br>部分前期强势股出现调整，市场整体趋势不明朗。<br><br>## 改善<br>前期表现较弱的个别板块有所回暖。<br><br>## 破位<br>无明显破位信号。<br><br>## 中性<br>多数个股维持震荡，市场整体呈现中性。<br><br>## 明日应对计划<br>密切关注市场动态，谨慎操作，保持仓位灵活。<br></code></pre></td></tr></table></figure>
+
+<p>[恐慌]市场处于防御状态，中期弱势显著，不宜抄底，降低持仓风险。 从本组风格池表现看，风险偏好偏弱。当日广泛下跌，核心股跌停扩散，量价结构承压。</p>
+<ul>
+<li><p><strong>今日总纲</strong>：市场处于恐慌预警，尽管银行等板块逆势上涨，但科伦药业等个股跌停预示恐慌情绪蔓延；市场触发防御机制。降低暴露是关键，避免盲目抄底科技硬件。</p>
+</li>
+<li><p><strong>今日风格地图</strong>：</p>
+</li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">-</span> 强势：银行保险<br><span class="hljs-bullet">-</span> 趋势：运营商电力<br><span class="hljs-bullet">-</span> 改善：消费电子端侧AI、汽车智能化、机器人智能制造、中药品牌、白酒、电网设备<br><span class="hljs-bullet">-</span> 破<br></code></pre></td></tr></table></figure>
+
+
+<p>The market’s primary driver appears to be the semiconductor sector’s continued downturn, catalyzed by specific stock declines like Ziguang Guowei and Shengmei Shanghai, dragging down related sectors. These events are coupled with broader panic stemming from a drop in key sectors. The PCB chain and AI servers have moved into a “breakdown” state, while others like AI software and innovation drugs have moved into “widespread collapse”.</p>
+<p>Banks and insurance sectors show resilience, moving into a “strong” category, representing the sole effective upward trend despite broader market declines; the “defense” segment is consolidating as a key upward theme. Meanwhile, the sector is experiencing increased congestion.<br>Other sectors, such as consumer electronics AI, are also improving, although under short-term pressures. It is noted that the insurance sub-logic has entered a “breakdown” state, although banks show continued strength.</p>
+<p>Defensive sectors like hydropower and highways show strength, but broader trends lack confirmation due to internal divergences and liquidity drain.  “Improved” sectors, including consumer electronics AI, auto intelligence, and robotics, show early signs of recovery, but remain structurally weak and face short-term pressures despite positive marginal momentum in some cases. Specifically, Consumer electronics AI is a low-level rebound in a structurally damaged state, while auto intelligence is showing a turning point but is still weak.</p>
+<p>Despite initial strength, the overall trend is weakening due to high-volume selling, evidenced by declines in robotics stocks. However, sectors like Traditional Chinese Medicine show relative resilience with positive contributions from specific stocks, despite a negative overall trend in averages. White liquor is experiencing a low-level rebound; however, it’s reliant on a single stock for support. Electrical grid equipment follows a similar pattern: minor gains are offset by overall negative trends.</p>
+<p>The semiconductor sector’s decline appears extreme, with significant losses across multiple sub-sectors, and all stocks hitting 60-day lows.  The “breakdown” is severe in chip design, PCB manufacturing, and AI server components, with heavy selling pressure and deteriorating technical indicators.  The neutral sector list encompasses a wide range of areas that have not been materially changed.</p>
+<ul>
+<li><strong>消费医疗医美</strong>：原趋势不再有效，但未跌破关键点位；放量下跌，贝泰妮的负面影响显著；内部表现不佳。</li>
+<li><strong>AI光模块 CPO</strong> <strong>低空经济</strong>：高位瓦解后跌势放缓，短期破坏严重；新易盛、纵横股份领跌；板块表现处于低点。</li>
+<li><strong>AI应用软件</strong> <strong>军工航空航天</strong>：主阶段瓦解，拓尔思与广联航空大幅下跌；内部一致性下跌明显。</li>
+<li><strong>创新药</strong> <strong>CXO医疗服务</strong>：全面恶化，短期压力沉重；科伦药业跌停，凯莱英加速探底；动量严重失速。</li>
+<li><strong>医疗器械</strong>：动量虽高，但日内放量下跌；内镜龙头南微医学大幅下跌；轻度短期压力。</li>
+<li><strong>传统券商</strong> <strong>金融科技</strong>：主阶段</li>
+</ul>
+<p>Market weakness extends to several sectors, with semiconductors experiencing further declines and heightened short-term pressure. Energy-related sectors are experiencing structural damage and face an increasing risk of breaking support levels. The previous strength in some sectors is now showing clear signs of weakness, with marginal momentum in decline. The response is market defense, pausing new positions and holding or reducing existing ones.</p>
+<p>Current strategy centers on stringent risk management. The “ban new positions” group, including banks and utilities, are only to be observed or held, not increased, given broader market weakness.  Sectors like food and beverage warrant defensive observation only, with minimal exposure.</p>
+<p>The “reduce exposure” category, encompassing technology and cyclical sectors, necessitates active position reduction due to significant downside risks and vulnerability to further losses.</p>
+<p>Strictly avoid buying on dips.  The following sectors require complete avoidance: AI servers, PCB chains, semiconductor equipment, chip design, AI optical modules, consumer electronics AI, precious metals, industrial metals, financial technology, innovative drugs, CXO medical services, power battery chains, and inverters. This stance is due to high breakdown risks and the prevalence of lower price points; any portfolio positions should be sold during any recovery. No new positions should be initiated until breakdown risk falls below the 60th percentile, the risk of decline is zero, and the 20-day line has been recovered. At least five trigger conditions should be met.</p>
+</think>
+
+<h1 id="2026-10-27-每日轮动风格雷达"><a href="#2026-10-27-每日轮动风格雷达" class="headerlink" title="2026-10-27 每日轮动风格雷达"></a>2026-10-27 每日轮动风格雷达</h1><h2 id="今日总纲"><a href="#今日总纲" class="headerlink" title="今日总纲"></a>今日总纲</h2><p>中期弱势广度预警持续且全市场触发恐慌预警，今天仅有3个方向逆势收涨，恐慌情绪明显蔓延。市场阀门关闭且触发防御，降低全部暴露。今天最该防的错误是盲目接飞刀，切忌以为科技成长杀出空间就急于抄底，耐心等待右侧止跌企稳。</p>
+<h2 id="今日风格地图"><a href="#今日风格地图" class="headerlink" title="今日风格地图"></a>今日风格地图</h2><ul>
+<li>强势：银行保险</li>
+<li>趋势：运营商电力</li>
+<li>改善：消费电子端侧AI、汽车智能化、机器人智能制造、中药品牌、白酒、电网设备</li>
+<li>破位：AI服务器、PCB链、半导体设备材料、芯片设计存储</li>
+<li>中性：AI光模块CPO、AI应用软件、军工航空航天、低空经济、贵金属黄金、工业金属、煤炭油气、能源红利、传统券商、金融科技、创新药、CXO医疗服务、医疗器械、消费医疗医美、动力电池链、新能源车链、光伏主链、逆变器储能、食品饮料、地产链复苏</li>
+</ul>
+<blockquote>
+<p><strong>说明</strong>：风格地图描述板块中期状态；实际动作由市场宽度阀门、短线压力和池级预警覆盖，动作层优先于状态标签。</p>
+</blockquote>
+<h2 id="相比上一交易日的变化"><a href="#相比上一交易日的变化" class="headerlink" title="相比上一交易日的变化"></a>相比上一交易日的变化</h2><p>今天最大的变化不是防御板块的单日收涨，而是前期抱团的科技成长主线出现共识性溃散。紫光国微跌停、盛美上海大跌带动半导体与芯片设计存储加速下挫，覆铜板华正新材跌停直接拖垮PCB链跌入破位，科伦药业跌停重挫创新药，引发算力硬件与成长赛道的大幅退潮。</p>
+<ul>
+<li><strong>破位加速与降级</strong>：AI服务器、PCB链从中性跌入破位；芯片设计存储短线压力升至重度，与半导体设备材料在破位深处加速下探。AI应用软件、机器人智能制造、传统券商、创新药、消费医疗医美的主阶段均从前期的抱团或震荡直接跌入瓦解；创新药、消费医疗医美、食品饮料跌出改善桶转入中性。低空经济、CXO医疗服务、逆变器储能等多方向短线压力恶化至重度。</li>
+<li><strong>阶段升级与防御切换</strong>：银行保险逆势抗跌，主阶段由震荡升入抱团，成为盘面唯一的强势主线；中药品牌亦逆势转入抱团。汽车智能化与电网设备虽因边际动量回暖进入改善，但受短线压力压制，整体并未摆脱弱势。</li>
+</ul>
+<h2 id="强势"><a href="#强势" class="headerlink" title="强势"></a>强势</h2><ul>
+<li><strong>银行保险</strong>：主阶段处于抱团，中等波动特征，是当前唯一具备结构支撑的主线。趋势结构扎实，60日线上方个股比例维持在75%，价格稳固运行在20日线上方，且相对强弱指标稳居60日线上方未见破位。池内8只核心股6涨2跌，兴业银行大涨2.25%、建设银行涨1.46%、招商银行涨1.15%形成主要向上带动。但需注意子逻辑内部的分化拖累，保险子逻辑走势偏弱，中国太保跌1.14%构成反向拖累，且板块拥挤热度已达极高区间，需防范极端情绪蔓延下的防御补跌风险。</li>
+</ul>
+<h2 id="趋势"><a href="#趋势" class="headerlink" title="趋势"></a>趋势</h2><ul>
+<li><strong>运营商电力</strong>：趋势状态为强势升级候选，主阶段处于普通震荡，中等波动特征。池内60日线上方比例保持满格，均线呈多头排列，破位风险处于极低分位。池内水电与交运细分展现出较强抗跌性，华能水电涨1.06%、招商公路涨0.87%、大秦铁路涨0.61%提供正向抵抗。目前未能升级强势的症结在于，龙头虹吸了板块大部分流动性，且火电华能国际跌2.59%、中国联通跌0.68%构成内部拖累，趋势稳定性偏弱，还缺一次全板块合力共振的放量走稳确认。</li>
+</ul>
+<h2 id="改善"><a href="#改善" class="headerlink" title="改善"></a>改善</h2><ul>
+<li><strong>消费电子端侧AI</strong>：修复位置属于低位反抽，处于瓦解主阶段，结构严重带伤且面临全面恶化风险。边际动量虽有所改善，但趋势方向性偏弱，均线呈空头排列，60日线上方比例仅剩10%。池内10只核心股全线下跌，卓胜微跌5.16%、蓝思科技跌4.94%、信维通信跌4.37%领跌，中度短线压力明显，反抽缺乏扎实的结构依托。</li>
+<li><strong>汽车智能化</strong>：低位反抽定位，主阶段处于瓦解，但边际动量处于极强梯队且正在转强。破位风险较低，华阳集团涨0.88%、拓普集团（同时属于机器人智能制造）涨0.57%提供抵抗；但内部60日线上方比例仅10%，中科创达跌2.43%、德赛西威跌1.95%拖累显著，且伴随轻度短线压力，修复仍处于极初期的脆弱阶段。</li>
+<li><strong>机器人智能制造</strong>：低位反抽且边际转强，主阶段已跌入瓦解。边际动量极强且破位风险明显回落，双环传动涨1.0%、拓普集团（同时属于汽车智能化）涨0.57%逆势走高；但日内量价结构承压，工业机器人等前期活跃个股冲高回落，埃斯顿大跌7.0%、绿的谐波跌6.03%，内部60日线上方个股不足三成，高位换手压制了修复持续性。</li>
+<li><strong>中药品牌</strong>：修复位置属于跌速缓和，主阶段升入抱团，结构相对干净且边际转强。破位风险处于极低分位，江中药业涨2.23%、片仔癀涨1.51%逆势走强；但达仁堂跌2.13%、以岭药业跌1.95%形成拖累，整体均线结构偏空，目前仅属于跌势放缓，向上确认仍缺板块内部广度的进一步扩散。</li>
+<li><strong>白酒</strong>：低位反抽且结构相对干净，平时走势偏稳但易产生极端波动，主阶段面临全面恶化。边际动量较强，贵州茅台涨0.44%提供微幅支撑；但龙头虹吸了板块绝大部分流动性，洋河股份跌2.2%、古井贡酒跌2.08%拖累明显，均线呈空头排列，反弹高度完全取决于权重个股的护盘意愿。</li>
+<li><strong>电网设备</strong>：低位反抽且边际转强，主阶段处于瓦解。边际动量极强，破位风险显著回落，特变电工涨0.79%小幅抵抗；但平高电气跌4.16%、金杯电工跌3.07%拖累沉重，空头排列格局未改，且伴随轻度短线破坏，下行通道尚未完全企稳。</li>
+</ul>
+<h2 id="破位"><a href="#破位" class="headerlink" title="破位"></a>破位</h2><ul>
+<li><strong>半导体设备材料</strong>（破位·重度短线压力）：高位坠落型，破位风险处于极高位，边际动量失速。日内板块大幅下挫近7%，盛美上海放量急跌9.04%、华海清科跌8.33%、芯源微跌7.64%，60日新低比例高达100%，均线空头排列带伤瓦解，止跌结构尚未出现。</li>
+<li><strong>芯片设计存储</strong>（破位·重度短线压力）：高位坠落型，破位风险极高且边际动量失速。紫光国微跌停（-10.0%），芯原股份跌6.22%、寒武纪跌5.68%，60日新低比例超六成，多头形态彻底破坏，卖压仍在持续释放。</li>
+<li><strong>PCB链</strong>（破位·重度短线压力）：高位坠落型，破位风险登顶且边际动量严重衰减。覆铜板华正新材跌停（-10.0%），胜宏科技跌7.4%、弘信电子跌4.26%，60日线上方比例完全归零，均线加速空头下行，短期破坏极其严重。</li>
+<li><strong>AI服务器</strong>（破位·重度短线压力）：高位坠落型，破位风险处于极高位，趋势结构全面恶化。中科曙光跌5.09%、科华数据跌4.54%、浪潮信息跌4.06%，60日新低比例超六成，中军力量全线退守，下行通道未见收敛。</li>
+</ul>
+<h2 id="中性"><a href="#中性" class="headerlink" title="中性"></a>中性</h2><ul>
+<li><strong>消费医疗医美</strong>：原趋势叙事失效但未达破位隔离标准，放量急跌且贝泰妮跌6.7%，内部广度大幅受损。</li>
+<li><strong>AI光模块CPO</strong> <strong>低空经济</strong>：前期高位回落后跌速虽有减缓，但短线破坏沉重，新易盛跌5.6%、纵横股份跌7.51%拖累显著，内部广度处于冰点。</li>
+<li><strong>AI应用软件</strong> <strong>军工航空航天</strong>：主阶段由抱团跌入瓦解，拓尔思跌6.01%、广联航空跌7.74%，内部个股呈现高度一致下跌。</li>
+<li><strong>创新药</strong> <strong>CXO医疗服务</strong>：阶段全面恶化且短线压力沉重，科伦药业跌停（-9.99%），凯莱英跌6.02%，边际动量大幅失速。</li>
+<li><strong>传统券商</strong> <strong>金融科技</strong>：主阶段跌入瓦解且中度短线压力发酵，长亮科技跌7.08%、指南针跌6.91%、中金公司跌2.98%共振下挫。</li>
+<li><strong>动力电池链</strong> <strong>逆变器储能</strong>：结构带伤且破位风险偏高，电解液新宙邦跌7.2%、固德威跌3.9%，内部60日新低比例持续扩散。</li>
+<li><strong>新能源车链</strong> <strong>光伏主链</strong>：空头排列格局沉重，正极当升科技跌7.26%、胶膜福斯特跌6.45%，放量下挫显现卖压未尽。</li>
+<li><strong>贵金属黄金</strong> <strong>工业金属</strong>：避险与顺周期支撑双双松动，盛达资源跌3.51%、中钨高新跌2.94%，仅洛阳钼业（+2.11%）与紫金矿业提供局部抵抗。</li>
+<li><strong>煤炭油气</strong> <strong>能源红利</strong>：结构质地尚且干净，招商轮船涨2.41%、恒源煤电涨2.23%逆势抗跌，但边际动量均出现衰减失速。</li>
+<li><strong>医疗器械</strong>：边际动量虽在加速，但放量回调且内镜南微医学大跌8.42%，冲高回落显现轻度短线破坏。</li>
+<li><strong>食品饮料</strong> <strong>地产链复苏</strong>：震荡中边际动量转弱，安井食品跌4.61%、东方雨虹跌5.25%压制板块，复苏动能停滞。</li>
+</ul>
+<h2 id="明日应对计划"><a href="#明日应对计划" class="headerlink" title="明日应对计划"></a>明日应对计划</h2><p>最终市场阀门关闭且触发防御（当前市场处于恐慌预警，全市场仅3个池子收涨），暂停新开仓；已有仓位按池级信号分别持有、减仓或退出。</p>
+<h3 id="禁新仓（防守观察-暂停新增暴露）"><a href="#禁新仓（防守观察-暂停新增暴露）" class="headerlink" title="禁新仓（防守观察 &#x2F; 暂停新增暴露）"></a>禁新仓（防守观察 &#x2F; 暂停新增暴露）</h3><ul>
+<li><strong>银行保险</strong>：若相对强弱跌破60日均线、60日均线以上比例跌破50%或有效跌破20日线，则强势状态动摇，降为防守观察；已有仓位在上述结构破坏前可继续观察，市场阀门关闭期间暂不加仓，未持有账户禁止追高。</li>
+<li><strong>运营商电力</strong> <strong>中药品牌</strong> <strong>煤炭油气</strong> <strong>能源红利</strong>：若放量守稳20日线且边际动量重新转强，在市场阀门打开后方可重新评估进攻资格；目前虽抗跌但受总阀门约束，已有仓位保持防守观察，未持有账户不开新仓。</li>
+</ul>
+<h3 id="防守观察（极小暴露防守）"><a href="#防守观察（极小暴露防守）" class="headerlink" title="防守观察（极小暴露防守）"></a>防守观察（极小暴露防守）</h3><ul>
+<li><strong>食品饮料</strong>：若下跌风险分升至2或破位风险升至60分位以上，则升级为降暴露；已有仓位保持低位防守，未持有账户不参与。</li>
+</ul>
+<h3 id="降暴露（主动减仓防守）"><a href="#降暴露（主动减仓防守）" class="headerlink" title="降暴露（主动减仓防守）"></a>降暴露（主动减仓防守）</h3><ul>
+<li><strong>汽车智能化</strong> <strong>机器人智能制造</strong> <strong>白酒</strong> <strong>电网设备</strong> <strong>AI应用软件</strong> <strong>军工航空航天</strong> <strong>低空经济</strong> <strong>传统券商</strong> <strong>医疗器械</strong> <strong>消费医疗医美</strong> <strong>新能源车链</strong> <strong>光伏主链</strong> <strong>地产链复苏</strong>：若反弹缺乏量能配合且无法收复20日线，则逢反抽主动压降仓位；若放量跌破短期支撑，则继续降低暴露；未持有账户严禁逢低试仓。</li>
+</ul>
+<h3 id="回避-零仓位（严格防守隔离）"><a href="#回避-零仓位（严格防守隔离）" class="headerlink" title="回避 &#x2F; 零仓位（严格防守隔离）"></a>回避 &#x2F; 零仓位（严格防守隔离）</h3><ul>
+<li><strong>AI服务器</strong> <strong>PCB链</strong> <strong>半导体设备材料</strong> <strong>芯片设计存储</strong> <strong>AI光模块CPO</strong> <strong>消费电子端侧AI</strong> <strong>贵金属黄金</strong> <strong>工业金属</strong> <strong>金融科技</strong> <strong>创新药</strong> <strong>CXO医疗服务</strong> <strong>动力电池链</strong> <strong>逆变器储能</strong>：若破位风险维持高位且跌停个股未能企稳，则坚决维持零仓位回避；已有仓位逢盘中脉冲减仓离场；只有等待破位风险回落至60分位以下、下跌风险分归零且形成放量止跌平台，才重新纳入观察。</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/stock/" class="category-chain-item">stock</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/rotate/" class="print-no-link">#rotate</a>
+      
+    </div>
+  
+</div>
+
+
+              
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2026/10/26/market_style_daily_2026-10-26/" title="2026-10-26 每日轮动风格雷达">
+                        <span class="hidden-mobile">2026-10-26 每日轮动风格雷达</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+      Ciallo～(∠・ω＜)⌒☆
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    function isExpandAllEnabled() {
+      return CONFIG.toc && CONFIG.toc.expand_all === true;
+    }
+    function expandAllToc() {
+      if (!isExpandAllEnabled()) { return; }
+      jQuery('#toc-body .tocbot-is-collapsed').removeClass('tocbot-is-collapsed');
+    }
+    function updateTocToggle($li, $childList) {
+      var $toggle = $li.children('.toc-toggle');
+      if ($toggle.length === 0) { return; }
+      var collapsed = $childList.hasClass('tocbot-is-collapsed');
+      $toggle
+        .toggleClass('toc-toggle-collapsed', collapsed)
+        .toggleClass('toc-toggle-expanded', !collapsed);
+    }
+    function bindTocToggle() {
+      if (!isExpandAllEnabled()) { return; }
+      jQuery('#toc-body .toc-list-item').each(function() {
+        var $li = jQuery(this);
+        var $childList = $li.children('ol');
+        if ($childList.length === 0) {
+          if ($li.children('.toc-toggle').length === 0) {
+            $li.prepend('<span class="toc-toggle toc-toggle-placeholder" aria-hidden="true">›</span>');
+          }
+          return;
+        }
+
+        if ($li.children('.toc-toggle').length === 0) {
+          $li.prepend('<span class="toc-toggle toc-toggle-expanded" aria-hidden="true">›</span>');
+        }
+        updateTocToggle($li, $childList);
+      });
+      jQuery('#toc-body').off('click.tocToggle').on('click.tocToggle', '.toc-toggle', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var $li = jQuery(this).parent('.toc-list-item');
+        var $childList = $li.children('ol');
+        if ($childList.length === 0) { return; }
+        $childList.toggleClass('tocbot-is-collapsed');
+        updateTocToggle($li, $childList);
+      });
+      if (!window.__tocToggleObserver) {
+        window.__tocToggleObserver = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            if (mutation.type !== 'attributes' || mutation.attributeName !== 'class') { return; }
+            var $list = jQuery(mutation.target);
+            var $li = $list.parent('.toc-list-item');
+            if ($li.length === 0) { return; }
+            updateTocToggle($li, $list);
+          });
+        });
+        jQuery('#toc-body ol').each(function() {
+          window.__tocToggleObserver.observe(this, { attributes: true });
+        });
+      }
+    }
+    var tocConfig = Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc);
+    if (isExpandAllEnabled()) {
+      tocConfig.collapseDepth = 6;
+    }
+    window.tocbot.init(tocConfig);
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+    expandAllToc();
+    bindTocToggle();
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+        expandAllToc();
+        bindTocToggle();
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
